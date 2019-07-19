@@ -1,0 +1,69 @@
+﻿
+@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*  Prometheus Application
+    Author : Mahajan Ashwin Vishnu
+    DOC : 07-07-2019
+    Main Home Page *@
+
+<body style="
+    background-image: url('../../Images/image1.jpg');
+    background-size: 100%;
+    ">
+
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prometheus</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+
+        window.history.forward();
+    </script>
+</head>
+<body>
+
+    <div class="container text-center">
+        <h1 class="mt-5 text-white font-weight-light">Prometheus</h1>
+        <p class="lead text-white-50">A powerful yet lightweight web application for managing your work.</p>
+        <p class="lead text-white-50">And You Are?</p>
+
+        @* Links to Teacher, Student and Admin Portals  *@
+
+        <p class="lead text-white-50">@Html.ActionLink("A Teacher", "Login", "Teacher", null, new { @class = "btn btn-info" })</p>
+
+        <p class="lead text-white-50">@Html.ActionLink("A Student", "Login", "Student", null, new { @class = "btn btn-info" })</p>
+
+        <p class="lead text-white-50">@Html.ActionLink("An Admin", "Login", "Admin", null, new { @class = "btn btn-info" })</p>
+    </div>
+    <div class="container body-content">
+
+
+        <hr />
+        <footer>
+            <p class="mt-5 text-white font-weight-light">Prometheus - A Capgemini Project &copy; @DateTime.Now.Year  </p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

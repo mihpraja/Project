@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Admin Home</h2>
+
+
+<p>@Html.ActionLink("Add Teacher", "AddTeacher", "Admin", null, new { @class = "btn btn-danger" })</p>
+
+<p>@Html.ActionLink("Add Student", "AddStudent", "Admin", null, new { @class = "btn btn-danger" })</p>
+
+<p>@Html.ActionLink("Add Course", "AddCourse", "Admin", null, new { @class = "btn btn-danger" })</p>
+
+<p>@Html.ActionLink("Search for a Teacher", "SearchTeacherByName", "Admin", null, new { @class = "btn btn-danger" })</p>
+
+<p>@Html.ActionLink("Search for a Student", "SearchStudentByName", "Admin", null, new { @class = "btn btn-danger" })</p>
+
+<p>@Html.ActionLink("Search for a Course", "SearchCourseByName", "Admin", null, new { @class = "btn btn-danger" })</p>
+
+<p>@Html.ActionLink("Assign Teacher for a Course", "ViewCourses", "Admin", null, new { @class = "btn btn-danger" })</p>

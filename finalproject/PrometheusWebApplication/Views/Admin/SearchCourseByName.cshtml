@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "SearchCourseByName";
+}
+
+<h2>Search a course</h2>
+
+@using (Html.BeginForm())
+{
+    <h3>
+        <input type="text" name="div" />
+        <input type="submit" value="Search by Course Name" class="btn btn-info" />
+    </h3>
+    @Html.ActionLink("Back to Admin Home", "Home")
+
+}
